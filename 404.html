@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting…</title>
+    <script>
+        // GitHub Pages SPA redirect trick.
+        // When GH Pages returns a 404 for a client-side route like /projects/foo,
+        // this page encodes the full URL into the query string and redirects to /.
+        // The script in index.html decodes it and pushes the real path to history.
+        var l = window.location;
+        l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1).join('/') +
+            '/?p=' + encodeURIComponent(l.pathname + l.search) +
+            (l.hash ? '&h=' + encodeURIComponent(l.hash) : '')
+        );
+    </script>
+</head>
+
+<body>Redirecting…</body>
+
+</html>
