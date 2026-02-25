@@ -78,11 +78,11 @@ export default function Hero() {
                     margin: '0 0 1.25rem',
                     maxWidth: 800,
                 }}>
-                    I build AI products
+                    AI Product Manager
                     <br />
-                    <span style={{ color: '#8B5CF6' }}>that think,</span>
+                    <span style={{ color: '#8B5CF6' }}>Indie Developer</span>
                     <br />
-                    not just react.
+                    Architecture Background
                 </motion.h1>
 
                 {/* Sub-headline */}
@@ -93,9 +93,8 @@ export default function Hero() {
                     margin: '0 0 2.5rem',
                     maxWidth: 560,
                 }}>
-                    AI Product Manager with 5+ years turning ML research into{' '}
-                    <strong style={{ color: '#1E293B', fontWeight: 600 }}>measurable business outcomes</strong>.
-                    LLMs, knowledge graphs, and cost-optimized inference.
+                    Building AI tools that enhance human creativity. From Tianjin University architecture to product management at ByteDance —{' '}
+                    <strong style={{ color: '#1E293B', fontWeight: 600 }}>creating at the intersection of user research, data analysis, and technical execution.</strong>
                 </motion.p>
 
                 {/* CTAs */}
@@ -135,9 +134,9 @@ export default function Hero() {
                 {/* Stat row */}
                 <motion.div variants={ITEM} style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem' }}>
                     {[
-                        { value: '5+', label: 'Years in AI/ML' },
-                        { value: '$2M+', label: 'Cost Savings Shipped' },
-                        { value: '12', label: 'ML Products Launched' },
+                        { value: '30+', label: 'User Interviews' },
+                        { value: '2', label: 'Internships' },
+                        { value: '40%', label: 'Cost Reduction' },
                     ].map(({ value, label }) => (
                         <div key={label}>
                             <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#1E293B', letterSpacing: '-0.03em' }}>{value}</div>

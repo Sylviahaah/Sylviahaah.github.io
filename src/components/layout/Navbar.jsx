@@ -65,7 +65,7 @@ export default function Navbar() {
                             <Zap size={16} color="white" strokeWidth={2.5} />
                         </div>
                         <span style={{ fontWeight: 700, fontSize: '1rem', color: '#1E293B', letterSpacing: '-0.02em' }}>
-                            Alex Chen
+                            Via
                         </span>
                     </Link>
 

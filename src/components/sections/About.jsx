@@ -5,18 +5,18 @@ import SectionHeading from '../ui/SectionHeading';
 const PRINCIPLES = [
     {
         icon: Target,
-        title: 'Outcome-first',
-        body: 'I start every product decision with the question: what behaviour changes in the user, and does that move our metric?',
+        title: 'Data Informs, Humans Decide',
+        body: 'Metrics guide decisions, but never override the nuance of real user stories.',
     },
     {
         icon: Sparkles,
-        title: 'AI-native thinking',
-        body: 'I treat ML models as first-class product components — with accuracy, latency, and cost as features to be traded off, not black boxes.',
+        title: 'Ship to Learn',
+        body: 'A working prototype today beats a perfect spec next month.',
     },
     {
         icon: Users,
-        title: 'Systems over features',
-        body: 'The best products are feedback loops. I obsess over how users, data, and models reinforce each other over time.',
+        title: 'Cross-boundary Thinking',
+        body: 'The most innovative solutions come from connecting disparate fields — like architecture and AI.',
     },
 ];
 
@@ -54,19 +54,13 @@ export default function About() {
                             👤
                         </div>
                         <h3 style={{ fontSize: '1.375rem', fontWeight: 700, color: '#1E293B', margin: '0 0 1rem' }}>
-                            Alex Chen
+                            Sylvia Zhang
                         </h3>
                         <p style={{ fontSize: '0.9375rem', color: '#475569', lineHeight: 1.75, margin: '0 0 1.5rem' }}>
-                            {/* REPLACE: Your actual bio */}
-                            I'm an AI Product Manager based in San Francisco with 5+ years turning ML
-                            research prototypes into products used by thousands. My background in
-                            Computer Science means I can read the architecture doc — my PM training
-                            means I know when not to build it.
+                            With a foundation in architecture from Tianjin University, I bring spatial thinking and systems design to product management. My transition into AI was driven by a passion for creating tools that augment human capabilities rather than replace them.
                         </p>
                         <p style={{ fontSize: '0.9375rem', color: '#475569', lineHeight: 1.75, margin: 0 }}>
-                            Before AI, I shipped analytics tooling at a Series A startup and held
-                            two engineering internships. I write about AI product strategy on
-                            {' '}<a href="#" style={{ color: '#8B5CF6', textDecoration: 'none', fontWeight: 500 }}>Substack</a>.
+                            Through internships at China Architectural Design Institute and ByteDance, I've developed a hybrid skill set — conducting user interviews, analyzing foot traffic data, managing content workflows, and building Chrome extensions. I believe the best products emerge at the intersection of deep user understanding and technical feasibility.
                         </p>
                     </motion.div>
 

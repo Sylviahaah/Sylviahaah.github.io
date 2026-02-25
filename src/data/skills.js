@@ -5,53 +5,47 @@
 export const skillCategories = [
     {
         id: 'product',
-        label: 'Product Strategy',
+        label: 'Product Tools',
         icon: 'Lightbulb',
         color: '#8B5CF6',
         skills: [
-            'Product Discovery', 'Jobs-to-be-Done', 'OKR Design', 'Roadmapping',
-            'Stakeholder Alignment', 'Go-to-Market Strategy', 'Pricing & Monetization',
-            'A/B Testing', 'User Research', 'Competitive Analysis',
+            'Axure', 'XMind', 'Visio', 'Notion', 'Feishu',
         ],
     },
     {
-        id: 'ai-ml',
-        label: 'AI / ML',
-        icon: 'Brain',
-        color: '#06B6D4',
-        skills: [
-            'LLM Fine-tuning', 'Prompt Engineering', 'RAG Systems', 'Vector Databases',
-            'ML Evaluation Frameworks', 'AI Safety & Alignment', 'LangChain / LlamaIndex',
-            'Embeddings', 'Model Observability', 'Semantic Search',
-        ],
-    },
-    {
-        id: 'technical',
-        label: 'Technical',
-        icon: 'Code2',
+        id: 'data',
+        label: 'Data Analysis',
+        icon: 'BarChart2',
         color: '#10B981',
         skills: [
-            'Python', 'SQL', 'React', 'REST APIs', 'System Design',
-            'Data Pipelines', 'Kubernetes Basics', 'Git', 'Figma', 'dbt',
+            'Python', 'SPSS', 'SQL', 'R', 'Tableau', 'Excel Advanced',
         ],
     },
     {
-        id: 'tools',
-        label: 'Tools & Platforms',
-        icon: 'Wrench',
-        color: '#F59E0B',
+        id: 'tech',
+        label: 'Technical Understanding',
+        icon: 'Code2',
+        color: '#3B82F6',
         skills: [
-            'Jira / Linear', 'Amplitude', 'Mixpanel', 'LaunchDarkly',
-            'Notion', 'Miro', 'Looker', 'Segment', 'Linear', 'Slack API',
+            'Prompt Engineering', 'Chrome Extension Dev', 'API Docs', 'Vibecoding', 'Git',
+        ],
+    },
+    {
+        id: 'design',
+        label: 'Design & Collaboration',
+        icon: 'PenTool',
+        color: '#EC4899',
+        skills: [
+            'MidJourney', 'Photoshop', 'InDesign', 'Sketchup', 'Rhino', 'D5 Render',
         ],
     },
 ];
 
 export const coreCompetencies = [
-    { label: 'Systems Thinking', level: 95 },
-    { label: 'Cross-functional Leadership', level: 92 },
-    { label: 'Data-driven Decision Making', level: 90 },
-    { label: 'Technical Depth', level: 82 },
-    { label: 'User Empathy', level: 88 },
-    { label: 'Strategic Communication', level: 85 },
+    { label: 'User Research & Interviews', level: 85 },
+    { label: 'Data-Driven Decision Making', level: 80 },
+    { label: 'Cross-functional Collaboration', level: 90 },
+    { label: 'Rapid Prototyping', level: 75 },
+    { label: 'Product Strategy', level: 70 },
+    { label: 'Technical Communication', level: 85 },
 ];

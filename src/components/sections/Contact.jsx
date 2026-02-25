@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, Twitter, Send, CheckCircle } from 'lucide-react';
+import { Mail, Linkedin, Github, Send, CheckCircle } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 
 const SOCIAL = [
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com', color: '#0A66C2' },
-    { icon: Github, label: 'GitHub', href: 'https://github.com', color: '#1E293B' },
-    { icon: Twitter, label: 'Twitter', href: 'https://twitter.com', color: '#1DA1F2' },
-    { icon: Mail, label: 'Email', href: 'mailto:alex@example.com', color: '#8B5CF6' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/sylviazhang', color: '#0A66C2' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/via-sylvia', color: '#1E293B' },
+    { icon: Mail, label: 'Email', href: 'mailto:sylvia.zhang@via.design', color: '#8B5CF6' },
 ];
 
 export default function Contact() {
@@ -30,7 +29,7 @@ export default function Contact() {
                 <SectionHeading
                     label="Contact"
                     title="Let's build something together"
-                    subtitle="Open to senior PM, Head of Product, and advisory conversations. Response in 24h."
+                    subtitle="Open to PM roles, indie dev collaborations, and coffee chats. Response within 24h."
                 />
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginTop: '2rem' }}>
@@ -144,10 +143,10 @@ export default function Contact() {
                                 Preferred for
                             </h3>
                             {[
-                                '🔭  Senior IC or leadership PM roles in AI/ML',
-                                '🤝  Advisory, consulting, and fractional CPO',
-                                '🎙️  Speaker invitations (AI product strategy)',
-                                '✍️  Content collaboration and co-authoring',
+                                '🔭  AI product management roles',
+                                '🤝  Indie dev & side project collaborations',
+                                '🎙️  Architecture × AI cross-field discussions',
+                                '✍️  User research & content co-creation',
                             ].map((item) => (
                                 <p key={item} style={{ fontSize: '0.875rem', color: '#475569', margin: '0 0 0.5rem', lineHeight: 1.6 }}>{item}</p>
                             ))}

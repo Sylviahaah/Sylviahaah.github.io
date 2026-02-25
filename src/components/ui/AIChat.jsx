@@ -7,23 +7,29 @@ import { MessageSquare, X, Send, Bot, User, Loader2, Sparkles } from 'lucide-rea
 // Set your API key in .env as VITE_DEEPSEEK_API_KEY
 // ============================================================
 
-const SYSTEM_PROMPT = `You are an AI assistant representing Alex Chen's portfolio.
-Alex is an AI Product Manager with 5+ years of experience shipping LLM platforms, knowledge graphs, and ML infrastructure products.
+const SYSTEM_PROMPT = `You are an AI assistant representing Sylvia Zhang's portfolio.
+Sylvia is an AI Product Manager with an architecture background from Tianjin University.
 
-Answer questions about Alex's background, projects, skills, and experience based on these facts:
-- Currently: Senior PM, AI Platform at Acme AI Corp (2023–present)
-- Previously: PM at DataFlow Technologies, APM at Nexus Analytics
-- Education: MS CS (AI) Stanford, BS Math+Stats UMich
-- Key projects: LLM Performance Dashboard ($1.2M cost savings), 3D Knowledge Graph (67% query reduction), LLM Caching (71% cost cut), Prompt Flow Designer (340+ beta users)
-- Skills: LLM fine-tuning, RAG, prompt engineering, Python, React, product strategy, roadmapping, A/B testing
+About Sylvia:
+- Education: B.Arch. Architecture from Tianjin University (2020–2024), focused on digital design and computational thinking
+- Personal brand: Via
+- Experience:
+  • Cultural Tourism Planning Intern at China Architectural Design Institute (Jun–Oct 2024): Conducted user interviews and POI data analysis to optimize commercial layout (10% efficiency gain), collected and cleaned 10,000+ pedestrian flow data points using Python and Excel, planned three functional zones estimated to increase visitor dwell time by 1.5h
+  • Project Management Intern at ByteDance · Shidianpedia (Mar–Jun 2023): Built content framework reducing review cycle by 20%, tracked high-quality entries, established feedback mechanism to cut team repetitive work
+- Skills: Product tools (Axure, XMind, Notion, Feishu), Data analysis (Python, SPSS, SQL, R, Tableau, Excel), Technical (Prompt Engineering, Chrome Extension Dev, API Docs, Vibecoding, Git), Design (MidJourney, Photoshop, Sketchup, Rhino, D5 Render)
+- Projects:
+  • PromptPal – Chrome extension for AI prompt management (30+ user interviews, 90% platform coverage, 45 GitHub stars, currently Beta)
+  • Digital Landscape Construction – 3D printed public installation (¥2000 budget, 40% cost reduction, 10-week timeline, Shipped)
+- Philosophy: "Data informs, humans decide" and "Cross-boundary thinking — architecture × AI"
 
-Be concise, friendly, and professional. If asked something outside Alex's portfolio, redirect politely.`;
+Be concise, friendly, and professional. Highlight Sylvia's unique architecture-to-AI transition story. Use specific data points when describing her experience. If asked about something not covered here, politely say you don't have that information and suggest checking her projects or contacting her directly.`;
+
 
 const SUGGESTED_QUESTIONS = [
-    "What's your biggest impact project?",
-    "How do you approach LLM cost optimization?",
-    "What PM skills do you bring to AI teams?",
-    "Are you open to new roles?",
+    "Tell me about PromptPal",
+    "What's your architecture background?",
+    "What PM skills do you bring?",
+    "Are you open to new opportunities?",
 ];
 
 function Message({ msg }) {
@@ -108,7 +114,7 @@ export default function AIChat() {
     const [messages, setMessages] = useState([
         {
             role: 'assistant',
-            content: "Hi! I'm Alex's AI assistant. Ask me anything about his projects, experience, or PM philosophy. 👋",
+            content: "Hi! I'm Sylvia's AI assistant. Ask me anything about her projects, experience, or product philosophy. 👋",
         },
     ]);
     const [input, setInput] = useState('');
@@ -229,7 +235,7 @@ export default function AIChat() {
                                     <Sparkles size={18} color="white" />
                                 </div>
                                 <div>
-                                    <div style={{ fontWeight: 700, color: 'white', fontSize: '0.9375rem' }}>Alex's AI</div>
+                                    <div style={{ fontWeight: 700, color: 'white', fontSize: '0.9375rem' }}>Sylvia's AI</div>
                                     <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.75)', display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
                                         <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#4ADE80', display: 'inline-block' }} />
                                         Powered by DeepSeek

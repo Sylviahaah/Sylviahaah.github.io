@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, Mail, Zap } from 'lucide-react';
+import { Github, Linkedin, Mail, Zap } from 'lucide-react';
 
 const SOCIAL_LINKS = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter/X' },
-    { icon: Mail, href: 'mailto:alex@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/via-sylvia', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/sylviazhang', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:sylvia.zhang@via.design', label: 'Email' },
 ];
 
 export default function Footer() {
@@ -29,8 +28,8 @@ export default function Footer() {
                             <Zap size={16} color="white" strokeWidth={2.5} />
                         </div>
                         <div>
-                            <div style={{ fontWeight: 700, color: '#1E293B', fontSize: '0.9375rem' }}>Alex Chen</div>
-                            <div style={{ fontSize: '0.75rem', color: '#64748B' }}>AI Product Manager</div>
+                            <div style={{ fontWeight: 700, color: '#1E293B', fontSize: '0.9375rem' }}>Sylvia Zhang</div>
+                            <div style={{ fontSize: '0.75rem', color: '#64748B' }}>AI Product Manager & Indie Developer</div>
                         </div>
                     </div>
 
@@ -60,7 +59,7 @@ export default function Footer() {
 
                 <div style={{ borderTop: '1px solid #E2E8F0', paddingTop: '1.5rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
                     <p style={{ margin: 0, fontSize: '0.8125rem', color: '#94A3B8' }}>
-                        © {year} Alex Chen. Built with React + Three.js.
+                        © {year} Sylvia Zhang. Built with React + Three.js.
                     </p>
                     <div style={{ display: 'flex', gap: '1.5rem' }}>
                         {['About', 'Projects', 'Contact'].map(link => (
